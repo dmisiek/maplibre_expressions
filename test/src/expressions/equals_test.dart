@@ -1,10 +1,9 @@
 import 'package:maplibre_expressions/src/maplibre_expression.dart';
-import 'package:test/scaffolding.dart';
 import 'package:test/test.dart';
 
 void main() {
   test('primitive expression is correctly composed', () {
-    final actual = MaplibreExp.equals(
+    final actual = const MaplibreExp.equals(
       MaplibreExp.get('test'),
       MaplibreExp.val(0),
     ).compose();
