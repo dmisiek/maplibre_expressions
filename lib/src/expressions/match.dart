@@ -1,35 +1,39 @@
 import 'package:maplibre_expressions/maplibre_expressions.dart';
 
-/// Selects the first output whose corresponding test condition evaluates
-/// to true, or the fallback value otherwise.
-class CaseExp extends MaplibreExp {
-  const CaseExp(
+class MatchExp extends MaplibreExp {
+  const MatchExp(
+    this.input,
     this.cases, {
     required this.fallback,
   });
 
-  final List<Case> cases;
+  final MaplibreExp input;
+  final List<MatchCase> cases;
   final MaplibreExp fallback;
 
   @override
   dynamic compose() {
     return [
-      'case',
+      'match',
+      input.compose(),
       ...cases.expand((e) => e.compose()),
       fallback.compose(),
     ];
   }
 }
 
-class Case {
-  const Case(this.condition, this.output);
+class MatchCase {
+  const MatchCase({
+    required this.label,
+    required this.output,
+  });
 
-  final MaplibreExp condition;
+  final MaplibreExp label;
   final MaplibreExp output;
 
   List<dynamic> compose() {
     return [
-      condition.compose(),
+      label.compose(),
       output.compose(),
     ];
   }
