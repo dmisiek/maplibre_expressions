@@ -52,8 +52,8 @@ Current implementation state based on [documentation](https://maplibre.org/mapli
 | :--- | :--- | :---: |
 | **Variable binding** | let, var | ⏳ |
 | **Types** | literal, array, typeof, string, number, boolean, object, collator, format, image, number-format, to-string, to-number, to-boolean, to-color | ⏳ |
-| **Lookup** | at, in, index-of, slice, global-state, get, has, length | ⏳ |
-| **Decision** | case, match, coalesce, ==, !=, >, <, >=, <=, all, any, !, within | ⏳ |
+| **Lookup** | at, in, index-of, slice, global-state, get, has, length | 🚧 |
+| **Decision** | case, match, coalesce, ==, !=, >, <, >=, <=, all, any, !, within | 🚧 |
 | **Ramps, scales** | step, interpolate, interpolate-hcl, interpolate-lab | ⏳ |
 | **Math** | +, *, -, /, %, ^, sqrt, log10, ln, log2, sin, cos, tan, asin, acos, atan, min, max, round, abs, ceil, floor, distance, ln2, pi, e | ⏳ |
 | **Color** | rgb, rgba, to-rgba | ⏳ |
@@ -63,8 +63,9 @@ Current implementation state based on [documentation](https://maplibre.org/mapli
 | **Terrain** | elevation | ⏳ |
 | **String** | is-supported-script, upcase, downcase, concat, resolved-locale | ⏳ |
 
-<br>✅ – Full support
-<br>⏳ – Planned / In progress
+<br>✅ – Fully implemented
+<br>🚧 - Partially implemented
+<br>⏳ – Not implemented (but planned)
 
 ## Running Tests 🧪
 
