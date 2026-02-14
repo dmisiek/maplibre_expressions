@@ -1,4 +1,5 @@
 import 'package:maplibre_expressions/src/expressions/case.dart';
+import 'package:maplibre_expressions/src/expressions/coalesce.dart';
 import 'package:maplibre_expressions/src/expressions/comparisons.dart';
 import 'package:maplibre_expressions/src/expressions/const.dart';
 import 'package:maplibre_expressions/src/expressions/get.dart';
@@ -33,6 +34,9 @@ abstract class MaplibreExp {
     List<MatchCase> cases, {
     required MaplibreExp fallback,
   }) = MatchExp;
+
+  const factory MaplibreExp.coalesce(List<MaplibreExp> expressions) =
+      CoalesceExp;
 
   const factory MaplibreExp.equals(MaplibreExp input1, MaplibreExp input2) =
       EqualsExp;
