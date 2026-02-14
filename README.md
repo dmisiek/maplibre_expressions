@@ -44,9 +44,9 @@ final layerProperties = SymbolLayerProperties(
 
 > Note: Package was designed to work with [flutter-maplibre-gl](https://github.com/maplibre/flutter-maplibre-gl/tree/main). SymbolLayerProperties class is provided by map package.
 
----
-
 ## Implementation state
+
+Current implementation state based on [documentation](https://maplibre.org/maplibre-style-spec/expressions/):
 
 | Category | Operator | Status |
 | :--- | :--- | :---: |
@@ -65,8 +65,6 @@ final layerProperties = SymbolLayerProperties(
 
 <br>✅ – Full support
 <br>⏳ – Planned / In progress
-
----
 
 ## Running Tests 🧪
 
