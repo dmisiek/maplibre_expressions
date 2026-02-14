@@ -27,7 +27,6 @@ class Condition {
   final MaplibreExp condition;
   final MaplibreExp output;
 
-  @override
   List<dynamic> compose() {
     return [
       condition.compose(),
