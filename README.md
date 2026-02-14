@@ -1,6 +1,8 @@
 # Maplibre Expressions
 
-Type-safe [maplibre expression](https://maplibre.org/maplibre-style-spec/expressions/) for dart. No more dynamic, error prone 
+**Compose [MapLibre expressions](https://maplibre.org/maplibre-style-spec/expressions/) in Dart with total type safety and structured, class-based composition.** This package replaces fragile dynamic maps with a robust API that catches styling bugs at compile-time, while naturally resulting in cleaner, better-formatted code. Build complex map layers with confidence and full IDE support.
+
+**Bonus:** Thanks to Dart's trailing commas, your complex expressions will now format into a readable tree structure automatically.
 
 [![License: MIT][license_badge]][license_link]
 
