@@ -48,20 +48,20 @@ final layerProperties = SymbolLayerProperties(
 
 Current implementation state based on [documentation](https://maplibre.org/maplibre-style-spec/expressions/):
 
-| Category | Operator | Status |
-| :--- | :--- | :---: |
-| **Variable binding** | let, var | ⏳ |
+| Category | Operator                                                                                                                                    | Status |
+| :--- |:--------------------------------------------------------------------------------------------------------------------------------------------| :---: |
+| **Variable binding** | let, var                                                                                                                                    | ⏳ |
 | **Types** | literal, array, typeof, string, number, boolean, object, collator, format, image, number-format, to-string, to-number, to-boolean, to-color | ⏳ |
-| **Lookup** | at, in, index-of, slice, global-state, get, has, length | 🚧 |
-| **Decision** | case, match, coalesce, ==, !=, >, <, >=, <=, all, any, !, within | 🚧 |
-| **Ramps, scales** | step, interpolate, interpolate-hcl, interpolate-lab | ⏳ |
-| **Math** | +, *, -, /, %, ^, sqrt, log10, ln, log2, sin, cos, tan, asin, acos, atan, min, max, round, abs, ceil, floor, distance, ln2, pi, e | ⏳ |
-| **Color** | rgb, rgba, to-rgba | ⏳ |
-| **Feature data** | properties, feature-state, geometry-type, id, line-progress, accumulated | ⏳ |
-| **Zoom** | zoom | ⏳ |
-| **Heatmap** | heatmap-density | ⏳ |
-| **Terrain** | elevation | ⏳ |
-| **String** | is-supported-script, upcase, downcase, concat, resolved-locale | ⏳ |
+| **Lookup** | at, in, index-of, slice, global-state, **get**, has, length                                                                                 | 🚧 |
+| **Decision** | **case**, **match**, **coalesce**, **==**, **!=**, **>**, **<**, **>=**, **<=**, all, any, !, within                                        | 🚧 |
+| **Ramps, scales** | step, interpolate, interpolate-hcl, interpolate-lab                                                                                         | ⏳ |
+| **Math** | +, *, -, /, %, ^, sqrt, log10, ln, log2, sin, cos, tan, asin, acos, atan, min, max, round, abs, ceil, floor, distance, ln2, pi, e           | ⏳ |
+| **Color** | rgb, rgba, to-rgba                                                                                                                          | ⏳ |
+| **Feature data** | properties, feature-state, geometry-type, id, line-progress, accumulated                                                                    | ⏳ |
+| **Zoom** | zoom                                                                                                                                        | ⏳ |
+| **Heatmap** | heatmap-density                                                                                                                             | ⏳ |
+| **Terrain** | elevation                                                                                                                                   | ⏳ |
+| **String** | is-supported-script, upcase, downcase, concat, resolved-locale                                                                              | ⏳ |
 
 <br>✅ – Fully implemented
 <br>🚧 - Partially implemented
