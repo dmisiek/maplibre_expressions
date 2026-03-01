@@ -15,6 +15,7 @@ import 'package:maplibre_expressions/src/expressions/lookup/in.dart';
 import 'package:maplibre_expressions/src/expressions/lookup/index_of.dart';
 import 'package:maplibre_expressions/src/expressions/lookup/length.dart';
 import 'package:maplibre_expressions/src/expressions/lookup/slice.dart';
+import 'package:maplibre_expressions/src/expressions/zoom/zoom.dart';
 
 /// {@template maplibre_expressions}
 /// A Very Good Project created by Very Good CLI.
@@ -113,6 +114,13 @@ abstract class MaplibreExp {
   const factory MaplibreExp.not(MaplibreExp input) = NotExp;
 
   const factory MaplibreExp.within(Map<String, dynamic> geojson) = WithinExp;
+
+  /*
+  * Zoom's expressions.
+  *
+  * https://maplibre.org/maplibre-style-spec/expressions/#zoom
+  */
+  const factory MaplibreExp.zoom() = ZoomExp;
 
   /*
   * Package specific expressions.
