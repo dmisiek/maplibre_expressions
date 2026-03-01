@@ -14,16 +14,16 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
 class AllExp extends MaplibreExp {
-  const AllExp(this.expressions);
+  const AllExp(this.inputs);
 
   /// Expressions evaluated by the `all` operator.
-  final List<MaplibreExp> expressions;
+  final List<MaplibreExp> inputs;
 
   @override
   List<dynamic> compose() {
     return [
       'all',
-      ...expressions.compose(),
+      ...inputs.compose(),
     ];
   }
 }
