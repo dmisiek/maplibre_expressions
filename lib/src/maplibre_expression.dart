@@ -8,11 +8,13 @@ import 'package:maplibre_expressions/src/expressions/decision/match.dart';
 import 'package:maplibre_expressions/src/expressions/decision/not.dart';
 import 'package:maplibre_expressions/src/expressions/decision/within.dart';
 import 'package:maplibre_expressions/src/expressions/lookup/at.dart';
-import 'package:maplibre_expressions/src/expressions/lookup/in.dart';
 import 'package:maplibre_expressions/src/expressions/lookup/get.dart';
 import 'package:maplibre_expressions/src/expressions/lookup/global_state.dart';
 import 'package:maplibre_expressions/src/expressions/lookup/has.dart';
+import 'package:maplibre_expressions/src/expressions/lookup/in.dart';
+import 'package:maplibre_expressions/src/expressions/lookup/index_of.dart';
 import 'package:maplibre_expressions/src/expressions/lookup/length.dart';
+import 'package:maplibre_expressions/src/expressions/lookup/slice.dart';
 
 /// {@template maplibre_expressions}
 /// A Very Good Project created by Very Good CLI.
@@ -34,6 +36,30 @@ abstract class MaplibreExp {
     MaplibreExp substring,
     MaplibreExp string,
   ) = InStringExp;
+
+  const factory MaplibreExp.indexOf(
+    MaplibreExp item,
+    MaplibreExp array, [
+    MaplibreExp? fromIndex,
+  ]) = IndexOfExp;
+
+  const factory MaplibreExp.indexOfString(
+    MaplibreExp substring,
+    MaplibreExp string, [
+    MaplibreExp? fromIndex,
+  ]) = IndexOfStringExp;
+
+  const factory MaplibreExp.slice(
+    MaplibreExp array,
+    MaplibreExp startIndex, [
+    MaplibreExp? endIndex,
+  ]) = SliceExp;
+
+  const factory MaplibreExp.sliceString(
+    MaplibreExp string,
+    MaplibreExp startIndex, [
+    MaplibreExp? endIndex,
+  ]) = SliceStringExp;
 
   const factory MaplibreExp.globalState(String propertyName) = GlobalStateExp;
 
