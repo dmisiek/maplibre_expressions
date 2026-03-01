@@ -1,5 +1,6 @@
 import 'package:maplibre_expressions/maplibre_expressions.dart';
 
+/// {@template coalesce_exp}
 /// Evaluates each expression in turn until the first non-null value is
 /// obtained, and returns that value.
 ///
@@ -10,7 +11,9 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
+/// {@endtemplate}
 class CoalesceExp extends MaplibreExp {
+  /// {@macro coalesce_exp}
   const CoalesceExp(this.expressions);
 
   /// Candidate expressions checked in order.

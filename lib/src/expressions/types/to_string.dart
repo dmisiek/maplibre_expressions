@@ -1,5 +1,6 @@
 import 'package:maplibre_expressions/maplibre_expressions.dart';
 
+/// {@template to_string_exp}
 /// Converts the input value to a string.
 ///
 /// - If the input is null, the result is "".
@@ -20,7 +21,9 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
+/// {@endtemplate}
 class ToStringExp extends MaplibreExp {
+  /// {@macro to_string_exp}
   const ToStringExp(this.value);
 
   /// Input value to convert.

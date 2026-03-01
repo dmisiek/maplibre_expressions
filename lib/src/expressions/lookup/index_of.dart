@@ -1,5 +1,6 @@
 import 'package:maplibre_expressions/maplibre_expressions.dart';
 
+/// {@template index_of_array_exp}
 /// Returns the first position at which an item can be found in an array
 /// or returns `-1` if the input cannot be found.
 ///
@@ -13,7 +14,9 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// * MapLibre GL JS: `1.10.0`
 /// * MapLibre Native Android: `10.3.0`
 /// * MapLibre Native iOS: `6.0.0`
+/// {@endtemplate}
 class IndexOfExp extends MaplibreExp {
+  /// {@macro index_of_array_exp}
   const IndexOfExp(this.item, this.array, [this.fromIndex]);
 
   /// Value to search for.
@@ -36,6 +39,7 @@ class IndexOfExp extends MaplibreExp {
   }
 }
 
+/// {@template index_of_string_exp}
 /// Returns the first position at which a substring can be found in a string
 /// or returns `-1` if the input cannot be found.
 ///
@@ -49,7 +53,9 @@ class IndexOfExp extends MaplibreExp {
 /// * MapLibre GL JS: `1.10.0`
 /// * MapLibre Native Android: `10.3.0`
 /// * MapLibre Native iOS: `6.0.0`
+/// {@endtemplate}
 class IndexOfStringExp extends MaplibreExp {
+  /// {@macro index_of_string_exp}
   const IndexOfStringExp(this.substring, this.string, [this.fromIndex]);
 
   /// Substring to search for.

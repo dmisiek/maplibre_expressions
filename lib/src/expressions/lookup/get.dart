@@ -1,5 +1,6 @@
 import 'package:maplibre_expressions/maplibre_expressions.dart';
 
+/// {@template get_exp}
 /// Retrieves a property value from the current feature's properties, or from
 /// another object if a second argument is provided.
 ///
@@ -16,7 +17,9 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
+/// {@endtemplate}
 class GetExp extends MaplibreExp {
+  /// {@macro get_exp}
   const GetExp(this.path);
 
   final String path;

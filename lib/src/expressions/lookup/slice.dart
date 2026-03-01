@@ -1,5 +1,6 @@
 import 'package:maplibre_expressions/maplibre_expressions.dart';
 
+/// {@template slice_array_exp}
 /// Returns a subarray from an array from a specified start index, or between
 /// a start index and an end index if set.
 ///
@@ -12,7 +13,9 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// * MapLibre GL JS: `1.10.0`
 /// * MapLibre Native Android: `10.3.0`
 /// * MapLibre Native iOS: `6.0.0`
+/// {@endtemplate}
 class SliceExp extends MaplibreExp {
+  /// {@macro slice_array_exp}
   const SliceExp(this.array, this.startIndex, [this.endIndex]);
 
   /// Array to slice.
@@ -35,6 +38,7 @@ class SliceExp extends MaplibreExp {
   }
 }
 
+/// {@template slice_string_exp}
 /// Returns a substring from a string from a specified start index, or between
 /// a start index and an end index if set.
 ///
@@ -48,7 +52,9 @@ class SliceExp extends MaplibreExp {
 /// * MapLibre GL JS: `1.10.0`
 /// * MapLibre Native Android: `10.3.0`
 /// * MapLibre Native iOS: `6.0.0`
+/// {@endtemplate}
 class SliceStringExp extends MaplibreExp {
+  /// {@macro slice_string_exp}
   const SliceStringExp(this.string, this.startIndex, [this.endIndex]);
 
   /// String to slice.

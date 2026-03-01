@@ -1,5 +1,6 @@
 import 'package:maplibre_expressions/maplibre_expressions.dart';
 
+/// {@template match_exp}
 /// Selects the output whose label value matches the input value, or the
 /// fallback value if no match is found.
 ///
@@ -19,7 +20,9 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
+/// {@endtemplate}
 class MatchExp extends MaplibreExp {
+  /// {@macro match_exp}
   const MatchExp({
     required this.input,
     required this.cases,

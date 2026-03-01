@@ -1,5 +1,6 @@
 import 'package:maplibre_expressions/maplibre_expressions.dart';
 
+/// {@template to_color_exp}
 /// Converts the input value to a color.
 ///
 /// - If multiple values are provided, each one is evaluated in order until the
@@ -13,7 +14,9 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
+/// {@endtemplate}
 class ToColorExp extends MaplibreExp {
+  /// {@macro to_color_exp}
   const ToColorExp(this.values);
 
   final List<MaplibreExp> values;

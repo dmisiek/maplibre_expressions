@@ -1,5 +1,6 @@
 import 'package:maplibre_expressions/maplibre_expressions.dart';
 
+/// {@template length_exp}
 /// Gets the length of an array or string. In a string, a UTF-16 surrogate pair
 /// counts as a single position.
 ///
@@ -10,7 +11,9 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
+/// {@endtemplate}
 class LengthExp extends MaplibreExp {
+  /// {@macro length_exp}
   const LengthExp(this.arrayOrString);
 
   final MaplibreExp arrayOrString;

@@ -1,5 +1,6 @@
 import 'package:maplibre_expressions/maplibre_expressions.dart';
 
+/// {@template image_exp}
 /// Returns an image type for use in icon-image, *-pattern entries and as
 /// a section in the format expression.
 ///
@@ -16,7 +17,9 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// * MapLibre GL JS: `1.6.0`
 /// * MapLibre Native Android: `9.1.0`
 /// * MapLibre Native iOS: `5.8.0`
+/// {@endtemplate}
 class ImageExp extends MaplibreExp {
+  /// {@macro image_exp}
   const ImageExp(this.imageName);
 
   /// Name of the image to resolve.

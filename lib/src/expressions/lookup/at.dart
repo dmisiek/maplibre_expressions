@@ -1,5 +1,6 @@
 import 'package:maplibre_expressions/maplibre_expressions.dart';
 
+/// {@template at_exp}
 /// Retrieves an item from an array.
 ///
 /// Documentation ref:
@@ -9,7 +10,9 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
+/// {@endtemplate}
 class AtExp extends MaplibreExp {
+  /// {@macro at_exp}
   const AtExp({required this.index, required this.array});
 
   /// Zero-based array index.

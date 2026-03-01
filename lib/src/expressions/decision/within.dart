@@ -1,5 +1,6 @@
 import 'package:maplibre_expressions/maplibre_expressions.dart';
 
+/// {@template within_exp}
 /// Returns `true` if the evaluated feature is fully contained inside a
 /// boundary of the input geometry, `false` otherwise.
 ///
@@ -18,7 +19,9 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// * MapLibre GL JS: `1.9.0`
 /// * MapLibre Native Android: `9.1.0`
 /// * MapLibre Native iOS: `5.8.0`
+/// {@endtemplate}
 class WithinExp extends MaplibreExp {
+  /// {@macro within_exp}
   const WithinExp(this.geojson);
 
   /// GeoJSON object used as the containment boundary.

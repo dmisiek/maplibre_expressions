@@ -1,5 +1,6 @@
 import 'package:maplibre_expressions/maplibre_expressions.dart';
 
+/// {@template to_number_exp}
 /// Converts the input value to a number, if possible.
 ///
 /// - If the input is null or false, the result is 0.
@@ -18,7 +19,9 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
+/// {@endtemplate}
 class ToNumberExp extends MaplibreExp {
+  /// {@macro to_number_exp}
   const ToNumberExp(this.values);
 
   /// Conversion candidates evaluated from left to right.

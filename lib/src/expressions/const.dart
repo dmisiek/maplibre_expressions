@@ -1,12 +1,15 @@
 import 'package:maplibre_expressions/maplibre_expressions.dart';
 
+/// {@template const_exp}
 /// Expression for wrapping exact value. Allows use any primitive value within
 /// other expressions, keeping type-safe.
 ///
 /// [value] can be string, number, color, array etc.
 ///
 /// **Package specific expression**
+/// {@endtemplate}
 class ConstExp<T> extends MaplibreExp {
+  /// {@macro const_exp}
   const ConstExp(this.value);
 
   final T value;

@@ -1,5 +1,6 @@
 import 'package:maplibre_expressions/maplibre_expressions.dart';
 
+/// {@template case_exp}
 /// Selects the first output whose corresponding test condition evaluates to
 /// true, or the fallback value otherwise.
 ///
@@ -10,7 +11,9 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
+/// {@endtemplate}
 class CaseExp extends MaplibreExp {
+  /// {@macro case_exp}
   const CaseExp({
     required this.cases,
     required this.fallback,

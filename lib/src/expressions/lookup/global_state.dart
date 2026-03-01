@@ -1,5 +1,6 @@
 import 'package:maplibre_expressions/maplibre_expressions.dart';
 
+/// {@template global_state_exp}
 /// Retrieves a property value from global state that can be set with
 /// platform-specific APIs.
 ///
@@ -13,7 +14,9 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// * MapLibre GL JS: `5.6.0`
 /// * MapLibre Native Android: not yet supported
 /// * MapLibre Native iOS: not yet supported
+/// {@endtemplate}
 class GlobalStateExp extends MaplibreExp {
+  /// {@macro global_state_exp}
   const GlobalStateExp(this.propertyName);
 
   /// Name of the global state property to return.
