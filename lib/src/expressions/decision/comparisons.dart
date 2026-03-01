@@ -35,14 +35,14 @@ class ComparisonExp extends MaplibreExp {
 /// Accepts an optional collator argument to control locale-dependent string
 /// comparisons.
 ///
-/// Documentation ref:
-/// * https://maplibre.org/maplibre-style-spec/expressions/#_1
-///
 /// Supported since:
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
 /// * Optional collator: GL JS `0.45.0`, Android `6.5.0`, iOS `4.2.0`
+///
+/// Documentation ref:
+/// * https://maplibre.org/maplibre-style-spec/expressions/#_1
 /// {@endtemplate}
 class EqualsExp extends ComparisonExp {
   /// {@macro equals_exp}
@@ -58,14 +58,14 @@ class EqualsExp extends ComparisonExp {
 /// Accepts an optional collator argument to control locale-dependent string
 /// comparisons.
 ///
-/// Documentation ref:
-/// * https://maplibre.org/maplibre-style-spec/expressions/#_2
-///
 /// Supported since:
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
 /// * Optional collator: GL JS `0.45.0`, Android `6.5.0`, iOS `4.2.0`
+///
+/// Documentation ref:
+/// * https://maplibre.org/maplibre-style-spec/expressions/#_2
 /// {@endtemplate}
 class NotEqualsExp extends ComparisonExp {
   /// {@macro not_equals_exp}
@@ -82,14 +82,14 @@ class NotEqualsExp extends ComparisonExp {
 /// considered in valid and will produce a parse error. Accepts an optional
 /// collator argument to control locale-dependent string comparisons.
 ///
-/// Documentation ref:
-/// * https://maplibre.org/maplibre-style-spec/expressions/#_3
-///
 /// Supported since:
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
 /// * Optional collator: GL JS `0.45.0`, Android `6.5.0`, iOS `4.2.0`
+///
+/// Documentation ref:
+/// * https://maplibre.org/maplibre-style-spec/expressions/#_3
 /// {@endtemplate}
 class GreaterExp extends ComparisonExp {
   /// {@macro greater_exp}
@@ -106,14 +106,14 @@ class GreaterExp extends ComparisonExp {
 /// considered in valid and will produce a parse error. Accepts an optional
 /// collator argument to control locale-dependent string comparisons.
 ///
-/// Documentation ref:
-/// * https://maplibre.org/maplibre-style-spec/expressions/#_5
-///
 /// Supported since:
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
 /// * Optional collator: GL JS `0.45.0`, Android `6.5.0`, iOS `4.2.0`
+///
+/// Documentation ref:
+/// * https://maplibre.org/maplibre-style-spec/expressions/#_5
 /// {@endtemplate}
 class GreaterOrEqualExp extends ComparisonExp {
   /// {@macro greater_or_equal_exp}
@@ -130,14 +130,14 @@ class GreaterOrEqualExp extends ComparisonExp {
 /// considered in valid and will produce a parse error. Accepts an optional
 /// collator argument to control locale-dependent string comparisons.
 ///
-/// Documentation ref:
-/// * https://maplibre.org/maplibre-style-spec/expressions/#_4
-///
 /// Supported since:
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
 /// * Optional collator: GL JS `0.45.0`, Android `6.5.0`, iOS `4.2.0`
+///
+/// Documentation ref:
+/// * https://maplibre.org/maplibre-style-spec/expressions/#_4
 /// {@endtemplate}
 class LessExp extends ComparisonExp {
   /// {@macro less_exp}
@@ -154,14 +154,14 @@ class LessExp extends ComparisonExp {
 /// considered in valid and will produce a parse error. Accepts an optional
 /// collator argument to control locale-dependent string comparisons.
 ///
-/// Documentation ref:
-/// * https://maplibre.org/maplibre-style-spec/expressions/#_6
-///
 /// Supported since:
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
 /// * Optional collator: GL JS `0.45.0`, Android `6.5.0`, iOS `4.2.0`
+///
+/// Documentation ref:
+/// * https://maplibre.org/maplibre-style-spec/expressions/#_6
 /// {@endtemplate}
 class LessOrEqualExp extends ComparisonExp {
   /// {@macro less_or_equal_exp}

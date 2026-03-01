@@ -7,13 +7,13 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// once an input expression evaluates to `false`, the result is `false`
 /// and no further input expressions are evaluated.
 ///
-/// Documentation ref:
-/// * https://maplibre.org/maplibre-style-spec/expressions/#all
-///
 /// Supported since:
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
+///
+/// Documentation ref:
+/// * https://maplibre.org/maplibre-style-spec/expressions/#all
 /// {@endtemplate}
 class AllExp extends MaplibreExp {
   /// {@macro all_exp}

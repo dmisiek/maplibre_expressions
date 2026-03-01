@@ -7,13 +7,13 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// Accepts an optional index from where to begin the search. In a string,
 /// a UTF-16 surrogate pair counts as a single position.
 ///
-/// Documentation ref:
-/// * https://maplibre.org/maplibre-style-spec/expressions/#index-of
-///
 /// Supported since:
 /// * MapLibre GL JS: `1.10.0`
 /// * MapLibre Native Android: `10.3.0`
 /// * MapLibre Native iOS: `6.0.0`
+///
+/// Documentation ref:
+/// * https://maplibre.org/maplibre-style-spec/expressions/#index-of
 /// {@endtemplate}
 class IndexOfExp extends MaplibreExp {
   /// {@macro index_of_array_exp}
@@ -46,13 +46,13 @@ class IndexOfExp extends MaplibreExp {
 /// Accepts an optional index from where to begin the search. In a string,
 /// a UTF-16 surrogate pair counts as a single position.
 ///
-/// Documentation ref:
-/// * https://maplibre.org/maplibre-style-spec/expressions/#index-of
-///
 /// Supported since:
 /// * MapLibre GL JS: `1.10.0`
 /// * MapLibre Native Android: `10.3.0`
 /// * MapLibre Native iOS: `6.0.0`
+///
+/// Documentation ref:
+/// * https://maplibre.org/maplibre-style-spec/expressions/#index-of
 /// {@endtemplate}
 class IndexOfStringExp extends MaplibreExp {
   /// {@macro index_of_string_exp}

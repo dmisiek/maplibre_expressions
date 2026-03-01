@@ -13,13 +13,13 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// Labels must be unique literals. Arrays cannot contain duplicate literals.
 /// Fallback can be any expression.
 ///
-/// Documentation ref:
-/// * https://maplibre.org/maplibre-style-spec/expressions/#match
-///
 /// Supported since:
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
+///
+/// Documentation ref:
+/// * https://maplibre.org/maplibre-style-spec/expressions/#match
 /// {@endtemplate}
 class MatchExp extends MaplibreExp {
   /// {@macro match_exp}

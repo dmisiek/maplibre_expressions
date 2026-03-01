@@ -14,13 +14,13 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// Otherwise, the input is converted to a string in the format specified by
 /// the JSON.stringify function of the ECMAScript Language Specification.
 ///
-/// Documentation ref:
-/// * https://maplibre.org/maplibre-style-spec/expressions/#to-string
-///
 /// Supported since:
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
+///
+/// Documentation ref:
+/// * https://maplibre.org/maplibre-style-spec/expressions/#to-string
 /// {@endtemplate}
 class ToStringExp extends MaplibreExp {
   /// {@macro to_string_exp}

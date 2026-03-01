@@ -10,13 +10,13 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// - access nested properties using dot path instead 'object' property,
 ///   e.g: 'user.name' as equivalent for ['get, 'name', ['get', 'user']]
 ///
-/// Documentation ref:
-/// * https://maplibre.org/maplibre-style-spec/expressions/#get
-///
 /// Supported since:
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
+///
+/// Documentation ref:
+/// * https://maplibre.org/maplibre-style-spec/expressions/#get
 /// {@endtemplate}
 class GetExp extends MaplibreExp {
   /// {@macro get_exp}

@@ -3,13 +3,13 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// {@template at_exp}
 /// Retrieves an item from an array.
 ///
-/// Documentation ref:
-/// * https://maplibre.org/maplibre-style-spec/expressions/#at
-///
 /// Supported since:
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
+///
+/// Documentation ref:
+/// * https://maplibre.org/maplibre-style-spec/expressions/#at
 /// {@endtemplate}
 class AtExp extends MaplibreExp {
   /// {@macro at_exp}

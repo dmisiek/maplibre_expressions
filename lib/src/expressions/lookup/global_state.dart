@@ -7,13 +7,13 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// Defaults can be provided using the state root property. Returns null if
 /// no value nor default value is set for the retrieved property.
 ///
-/// Documentation ref:
-/// * https://maplibre.org/maplibre-style-spec/expressions/#global-state
-///
 /// Supported since:
 /// * MapLibre GL JS: `5.6.0`
 /// * MapLibre Native Android: not yet supported
 /// * MapLibre Native iOS: not yet supported
+///
+/// Documentation ref:
+/// * https://maplibre.org/maplibre-style-spec/expressions/#global-state
 /// {@endtemplate}
 class GlobalStateExp extends MaplibreExp {
   /// {@macro global_state_exp}

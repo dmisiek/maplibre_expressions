@@ -3,13 +3,13 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// {@template in_array_exp}
 /// Determines whether an item exists in an array.
 ///
-/// Documentation ref:
-/// * https://maplibre.org/maplibre-style-spec/expressions/#in
-///
 /// Supported since:
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
+///
+/// Documentation ref:
+/// * https://maplibre.org/maplibre-style-spec/expressions/#in
 /// {@endtemplate}
 class InExp extends MaplibreExp {
   /// {@macro in_array_exp}
@@ -33,13 +33,13 @@ class InExp extends MaplibreExp {
 /// {@template in_string_exp}
 /// Determines whether a substring exists in a string.
 ///
-/// Documentation ref:
-/// * https://maplibre.org/maplibre-style-spec/expressions/#in
-///
 /// Supported since:
 /// * MapLibre GL JS: `0.41.0`
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
+///
+/// Documentation ref:
+/// * https://maplibre.org/maplibre-style-spec/expressions/#in
 /// {@endtemplate}
 class InStringExp extends MaplibreExp {
   /// {@macro in_string_exp}

@@ -12,13 +12,13 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// - LineString: returns `false` if any part intersects the boundary, lies
 /// outside, or has endpoints on the boundary.
 ///
-/// Documentation ref:
-/// * https://maplibre.org/maplibre-style-spec/expressions/#within
-///
 /// Supported since:
 /// * MapLibre GL JS: `1.9.0`
 /// * MapLibre Native Android: `9.1.0`
 /// * MapLibre Native iOS: `5.8.0`
+///
+/// Documentation ref:
+/// * https://maplibre.org/maplibre-style-spec/expressions/#within
 /// {@endtemplate}
 class WithinExp extends MaplibreExp {
   /// {@macro within_exp}

@@ -6,13 +6,13 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 ///
 /// The return value is inclusive of the start index but not of the end index.
 ///
-/// Documentation ref:
-/// * https://maplibre.org/maplibre-style-spec/expressions/#slice
-///
 /// Supported since:
 /// * MapLibre GL JS: `1.10.0`
 /// * MapLibre Native Android: `10.3.0`
 /// * MapLibre Native iOS: `6.0.0`
+///
+/// Documentation ref:
+/// * https://maplibre.org/maplibre-style-spec/expressions/#slice
 /// {@endtemplate}
 class SliceExp extends MaplibreExp {
   /// {@macro slice_array_exp}
@@ -45,13 +45,13 @@ class SliceExp extends MaplibreExp {
 /// The return value is inclusive of the start index but not of the end index.
 /// In a string, a UTF-16 surrogate pair counts as a single position.
 ///
-/// Documentation ref:
-/// * https://maplibre.org/maplibre-style-spec/expressions/#slice
-///
 /// Supported since:
 /// * MapLibre GL JS: `1.10.0`
 /// * MapLibre Native Android: `10.3.0`
 /// * MapLibre Native iOS: `6.0.0`
+///
+/// Documentation ref:
+/// * https://maplibre.org/maplibre-style-spec/expressions/#slice
 /// {@endtemplate}
 class SliceStringExp extends MaplibreExp {
   /// {@macro slice_string_exp}
