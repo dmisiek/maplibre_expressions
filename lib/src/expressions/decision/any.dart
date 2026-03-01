@@ -9,7 +9,7 @@ class AnyExp extends MaplibreExp {
   dynamic compose() {
     return [
       'any',
-      ...expressions.map((e) => e.compose()),
+      ...expressions.compose(),
     ];
   }
 }

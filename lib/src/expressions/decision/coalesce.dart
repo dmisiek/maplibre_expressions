@@ -9,7 +9,7 @@ class CoalesceExp extends MaplibreExp {
   dynamic compose() {
     return [
       'coalesce',
-      ...expressions.map((e) => e.compose()),
+      ...expressions.compose(),
     ];
   }
 }
