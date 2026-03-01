@@ -20,9 +20,9 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
 class MatchExp extends MaplibreExp {
-  const MatchExp(
-    this.input,
-    this.cases, {
+  const MatchExp({
+    required this.input,
+    required this.cases,
     required this.fallback,
   });
 

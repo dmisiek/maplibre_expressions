@@ -4,7 +4,7 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// properties, or from another object if a second argument is provided.
 ///
 /// Package specific:
-/// - access nested properties using dots instead 'object' property,
+/// - access nested properties using dot path instead 'object' property,
 ///   e.g: 'user.name' as equivalent for ['has, 'name', ['get', 'user']]
 ///
 /// Documentation ref:
@@ -15,13 +15,13 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
 class HasExp extends MaplibreExp {
-  const HasExp(this.key);
+  const HasExp(this.path);
 
-  final String key;
+  final String path;
 
   @override
   List<dynamic> compose() {
-    return key
+    return path
         .split('.')
         .map((e) => ['has', e]) // todo: verify if thats correct
         .fold(

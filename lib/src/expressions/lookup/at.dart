@@ -10,7 +10,7 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
 class AtExp extends MaplibreExp {
-  const AtExp(this.index, this.array);
+  const AtExp({required this.index, required this.array});
 
   /// Zero-based array index.
   final MaplibreExp index;

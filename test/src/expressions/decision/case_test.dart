@@ -4,14 +4,14 @@ import 'package:test/test.dart';
 void main() {
   test('composes case expression with fallback', () {
     final actual = const MaplibreExp.caseExp(
-      [
+      cases: [
         .new(
-          .lse(.get('temperature'), .val(0)),
-          .val('freezing'),
+          condition: .lse(.get('temperature'), .val(0)),
+          output: .val('freezing'),
         ),
         .new(
-          .lse(.get('temperature'), .val(20)),
-          .val('cold'),
+          condition: .lse(.get('temperature'), .val(20)),
+          output: .val('cold'),
         ),
       ],
       fallback: .val('warm'),

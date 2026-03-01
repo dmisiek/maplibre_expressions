@@ -6,7 +6,7 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// Returns `null` if the requested property is missing.
 ///
 /// Package specific:
-/// - access nested properties using dots instead 'object' property,
+/// - access nested properties using dot path instead 'object' property,
 ///   e.g: 'user.name' as equivalent for ['get, 'name', ['get', 'user']]
 ///
 /// Documentation ref:
@@ -17,13 +17,13 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
 class GetExp extends MaplibreExp {
-  const GetExp(this.key);
+  const GetExp(this.path);
 
-  final String key;
+  final String path;
 
   @override
   List<dynamic> compose() {
-    return key
+    return path
         .split('.')
         .map((e) => ['get', e])
         .fold(

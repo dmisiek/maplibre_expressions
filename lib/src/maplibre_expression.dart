@@ -49,14 +49,20 @@ abstract class MaplibreExp {
   *
   * https://maplibre.org/maplibre-style-spec/expressions/#lookup
   */
-  const factory MaplibreExp.at(MaplibreExp index, MaplibreExp array) = AtExp;
+  const factory MaplibreExp.at({
+    required MaplibreExp index,
+    required MaplibreExp array,
+  }) = AtExp;
 
-  const factory MaplibreExp.inExp(MaplibreExp item, MaplibreExp array) = InExp;
+  const factory MaplibreExp.inExp({
+    required MaplibreExp item,
+    required MaplibreExp array,
+  }) = InExp;
 
-  const factory MaplibreExp.inString(
-    MaplibreExp substring,
-    MaplibreExp string,
-  ) = InStringExp;
+  const factory MaplibreExp.inString({
+    required MaplibreExp substring,
+    required MaplibreExp string,
+  }) = InStringExp;
 
   const factory MaplibreExp.indexOf(
     MaplibreExp item,
@@ -84,9 +90,9 @@ abstract class MaplibreExp {
 
   const factory MaplibreExp.globalState(String propertyName) = GlobalStateExp;
 
-  const factory MaplibreExp.get(String key) = GetExp;
+  const factory MaplibreExp.get(String path) = GetExp;
 
-  const factory MaplibreExp.has(String key) = HasExp;
+  const factory MaplibreExp.has(String path) = HasExp;
 
   const factory MaplibreExp.length(MaplibreExp arrayOrString) = LengthExp;
 
@@ -95,14 +101,14 @@ abstract class MaplibreExp {
   *
   * https://maplibre.org/maplibre-style-spec/expressions/#decision
   */
-  const factory MaplibreExp.caseExp(
-    List<Case> cases, {
+  const factory MaplibreExp.caseExp({
+    required List<Case> cases,
     required MaplibreExp fallback,
   }) = CaseExp;
 
-  const factory MaplibreExp.match(
-    MaplibreExp input,
-    List<MatchCase> cases, {
+  const factory MaplibreExp.match({
+    required MaplibreExp input,
+    required List<MatchCase> cases,
     required MaplibreExp fallback,
   }) = MatchExp;
 

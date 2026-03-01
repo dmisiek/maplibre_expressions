@@ -11,8 +11,8 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
 class CaseExp extends MaplibreExp {
-  const CaseExp(
-    this.cases, {
+  const CaseExp({
+    required this.cases,
     required this.fallback,
   });
 
@@ -34,7 +34,10 @@ class CaseExp extends MaplibreExp {
 
 /// Represents one `case` branch: `condition` followed by `output`.
 class Case {
-  const Case(this.condition, this.output);
+  const Case({
+    required this.condition,
+    required this.output,
+  });
 
   /// Condition expression for this branch.
   final MaplibreExp condition;

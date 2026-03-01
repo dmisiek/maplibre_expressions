@@ -10,7 +10,10 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
 class InExp extends MaplibreExp {
-  const InExp(this.item, this.array);
+  const InExp({
+    required this.item,
+    required this.array,
+  });
 
   /// Value searched in the array.
   final MaplibreExp item;
@@ -34,7 +37,10 @@ class InExp extends MaplibreExp {
 /// * MapLibre Native Android: `6.0.0`
 /// * MapLibre Native iOS: `4.0.0`
 class InStringExp extends MaplibreExp {
-  const InStringExp(this.substring, this.string);
+  const InStringExp({
+    required this.substring,
+    required this.string,
+  });
 
   /// Substring to search for.
   final MaplibreExp substring;
