@@ -8,6 +8,11 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 ///
 /// Documentation ref:
 /// * https://maplibre.org/maplibre-style-spec/expressions/#global-state
+///
+/// Supported since:
+/// * MapLibre GL JS: `5.6.0`
+/// * MapLibre Native Android: not yet supported
+/// * MapLibre Native iOS: not yet supported
 class GlobalStateExp extends MaplibreExp {
   const GlobalStateExp(this.propertyName);
 

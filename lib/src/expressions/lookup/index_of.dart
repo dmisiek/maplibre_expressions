@@ -8,6 +8,11 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 ///
 /// Documentation ref:
 /// * https://maplibre.org/maplibre-style-spec/expressions/#index-of
+///
+/// Supported since:
+/// * MapLibre GL JS: `1.10.0`
+/// * MapLibre Native Android: `10.3.0`
+/// * MapLibre Native iOS: `6.0.0`
 class IndexOfExp extends MaplibreExp {
   const IndexOfExp(this.item, this.array, [this.fromIndex]);
 
@@ -39,6 +44,11 @@ class IndexOfExp extends MaplibreExp {
 ///
 /// Documentation ref:
 /// * https://maplibre.org/maplibre-style-spec/expressions/#index-of
+///
+/// Supported since:
+/// * MapLibre GL JS: `1.10.0`
+/// * MapLibre Native Android: `10.3.0`
+/// * MapLibre Native iOS: `6.0.0`
 class IndexOfStringExp extends MaplibreExp {
   const IndexOfStringExp(this.substring, this.string, [this.fromIndex]);
 

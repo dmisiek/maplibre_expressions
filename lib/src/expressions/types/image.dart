@@ -11,6 +11,11 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 ///
 /// Documentation ref:
 /// * https://maplibre.org/maplibre-style-spec/expressions/#image
+///
+/// Supported since:
+/// * MapLibre GL JS: `1.6.0`
+/// * MapLibre Native Android: `9.1.0`
+/// * MapLibre Native iOS: `5.8.0`
 class ImageExp extends MaplibreExp {
   const ImageExp(this.imageName);
 

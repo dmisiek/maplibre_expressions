@@ -13,6 +13,11 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 ///
 /// Documentation ref:
 /// * https://maplibre.org/maplibre-style-spec/expressions/#within
+///
+/// Supported since:
+/// * MapLibre GL JS: `1.9.0`
+/// * MapLibre Native Android: `9.1.0`
+/// * MapLibre Native iOS: `5.8.0`
 class WithinExp extends MaplibreExp {
   const WithinExp(this.geojson);
 

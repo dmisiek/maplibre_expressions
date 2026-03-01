@@ -7,6 +7,11 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 ///
 /// Documentation ref:
 /// * https://maplibre.org/maplibre-style-spec/expressions/#slice
+///
+/// Supported since:
+/// * MapLibre GL JS: `1.10.0`
+/// * MapLibre Native Android: `10.3.0`
+/// * MapLibre Native iOS: `6.0.0`
 class SliceExp extends MaplibreExp {
   const SliceExp(this.array, this.startIndex, [this.endIndex]);
 
@@ -38,6 +43,11 @@ class SliceExp extends MaplibreExp {
 ///
 /// Documentation ref:
 /// * https://maplibre.org/maplibre-style-spec/expressions/#slice
+///
+/// Supported since:
+/// * MapLibre GL JS: `1.10.0`
+/// * MapLibre Native Android: `10.3.0`
+/// * MapLibre Native iOS: `6.0.0`
 class SliceStringExp extends MaplibreExp {
   const SliceStringExp(this.string, this.startIndex, [this.endIndex]);
 

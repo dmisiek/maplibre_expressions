@@ -36,6 +36,12 @@ class ComparisonExp extends MaplibreExp {
 ///
 /// Documentation ref:
 /// * https://maplibre.org/maplibre-style-spec/expressions/#_1
+///
+/// Supported since:
+/// * MapLibre GL JS: `0.41.0`
+/// * MapLibre Native Android: `6.0.0`
+/// * MapLibre Native iOS: `4.0.0`
+/// * Optional collator: GL JS `0.45.0`, Android `6.5.0`, iOS `4.2.0`
 class EqualsExp extends ComparisonExp {
   const EqualsExp(super.input1, super.input2) : super(sign: '==');
 }
@@ -50,6 +56,12 @@ class EqualsExp extends ComparisonExp {
 ///
 /// Documentation ref:
 /// * https://maplibre.org/maplibre-style-spec/expressions/#_2
+///
+/// Supported since:
+/// * MapLibre GL JS: `0.41.0`
+/// * MapLibre Native Android: `6.0.0`
+/// * MapLibre Native iOS: `4.0.0`
+/// * Optional collator: GL JS `0.45.0`, Android `6.5.0`, iOS `4.2.0`
 class NotEqualsExp extends ComparisonExp {
   const NotEqualsExp(super.input1, super.input2) : super(sign: '!=');
 }
@@ -65,6 +77,12 @@ class NotEqualsExp extends ComparisonExp {
 ///
 /// Documentation ref:
 /// * https://maplibre.org/maplibre-style-spec/expressions/#_3
+///
+/// Supported since:
+/// * MapLibre GL JS: `0.41.0`
+/// * MapLibre Native Android: `6.0.0`
+/// * MapLibre Native iOS: `4.0.0`
+/// * Optional collator: GL JS `0.45.0`, Android `6.5.0`, iOS `4.2.0`
 class GreaterExp extends ComparisonExp {
   const GreaterExp(super.input1, super.input2) : super(sign: '>');
 }
@@ -80,6 +98,12 @@ class GreaterExp extends ComparisonExp {
 ///
 /// Documentation ref:
 /// * https://maplibre.org/maplibre-style-spec/expressions/#_5
+///
+/// Supported since:
+/// * MapLibre GL JS: `0.41.0`
+/// * MapLibre Native Android: `6.0.0`
+/// * MapLibre Native iOS: `4.0.0`
+/// * Optional collator: GL JS `0.45.0`, Android `6.5.0`, iOS `4.2.0`
 class GreaterOrEqualExp extends ComparisonExp {
   const GreaterOrEqualExp(super.input1, super.input2) : super(sign: '>=');
 }
@@ -95,6 +119,12 @@ class GreaterOrEqualExp extends ComparisonExp {
 ///
 /// Documentation ref:
 /// * https://maplibre.org/maplibre-style-spec/expressions/#_4
+///
+/// Supported since:
+/// * MapLibre GL JS: `0.41.0`
+/// * MapLibre Native Android: `6.0.0`
+/// * MapLibre Native iOS: `4.0.0`
+/// * Optional collator: GL JS `0.45.0`, Android `6.5.0`, iOS `4.2.0`
 class LessExp extends ComparisonExp {
   const LessExp(super.input1, super.input2) : super(sign: '<');
 }
@@ -110,6 +140,12 @@ class LessExp extends ComparisonExp {
 ///
 /// Documentation ref:
 /// * https://maplibre.org/maplibre-style-spec/expressions/#_6
+///
+/// Supported since:
+/// * MapLibre GL JS: `0.41.0`
+/// * MapLibre Native Android: `6.0.0`
+/// * MapLibre Native iOS: `4.0.0`
+/// * Optional collator: GL JS `0.45.0`, Android `6.5.0`, iOS `4.2.0`
 class LessOrEqualExp extends ComparisonExp {
   const LessOrEqualExp(super.input1, super.input2) : super(sign: '<=');
 }

@@ -5,6 +5,11 @@ import 'package:maplibre_expressions/maplibre_expressions.dart';
 ///
 /// Documentation ref:
 /// * https://maplibre.org/maplibre-style-spec/expressions/#%21
+///
+/// Supported since:
+/// * MapLibre GL JS: `0.41.0`
+/// * MapLibre Native Android: `6.0.0`
+/// * MapLibre Native iOS: `4.0.0`
 class NotExp extends MaplibreExp {
   const NotExp(this.input);
 
