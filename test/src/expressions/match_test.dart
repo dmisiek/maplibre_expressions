@@ -3,7 +3,7 @@ import 'package:test/test.dart';
 
 void main() {
   test('primitive expression is correctly composed', () {
-    final actual = const MaplibreExp.matchExp(
+    final actual = const MaplibreExp.match(
       .get('user.firstname'),
       [
         .new(

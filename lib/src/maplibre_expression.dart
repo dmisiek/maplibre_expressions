@@ -7,6 +7,8 @@ import 'package:maplibre_expressions/src/expressions/decision/comparisons.dart';
 import 'package:maplibre_expressions/src/expressions/decision/match.dart';
 import 'package:maplibre_expressions/src/expressions/decision/not.dart';
 import 'package:maplibre_expressions/src/expressions/decision/within.dart';
+import 'package:maplibre_expressions/src/expressions/lookup/at.dart';
+import 'package:maplibre_expressions/src/expressions/lookup/in.dart';
 import 'package:maplibre_expressions/src/expressions/lookup/get.dart';
 import 'package:maplibre_expressions/src/expressions/lookup/global_state.dart';
 import 'package:maplibre_expressions/src/expressions/lookup/has.dart';
@@ -24,6 +26,15 @@ abstract class MaplibreExp {
   *
   * https://maplibre.org/maplibre-style-spec/expressions/#lookup
   */
+  const factory MaplibreExp.at(MaplibreExp index, MaplibreExp array) = AtExp;
+
+  const factory MaplibreExp.inExp(MaplibreExp item, MaplibreExp array) = InExp;
+
+  const factory MaplibreExp.inString(
+    MaplibreExp substring,
+    MaplibreExp string,
+  ) = InStringExp;
+
   const factory MaplibreExp.globalState(String propertyName) = GlobalStateExp;
 
   const factory MaplibreExp.get(String key) = GetExp;
@@ -42,7 +53,7 @@ abstract class MaplibreExp {
     required MaplibreExp fallback,
   }) = CaseExp;
 
-  const factory MaplibreExp.matchExp(
+  const factory MaplibreExp.match(
     MaplibreExp input,
     List<MatchCase> cases, {
     required MaplibreExp fallback,
