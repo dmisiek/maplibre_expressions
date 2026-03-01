@@ -15,6 +15,11 @@ import 'package:maplibre_expressions/src/expressions/lookup/in.dart';
 import 'package:maplibre_expressions/src/expressions/lookup/index_of.dart';
 import 'package:maplibre_expressions/src/expressions/lookup/length.dart';
 import 'package:maplibre_expressions/src/expressions/lookup/slice.dart';
+import 'package:maplibre_expressions/src/expressions/types/image.dart';
+import 'package:maplibre_expressions/src/expressions/types/to_boolean.dart';
+import 'package:maplibre_expressions/src/expressions/types/to_color.dart';
+import 'package:maplibre_expressions/src/expressions/types/to_number.dart';
+import 'package:maplibre_expressions/src/expressions/types/to_string.dart';
 import 'package:maplibre_expressions/src/expressions/zoom/zoom.dart';
 
 /// {@template maplibre_expressions}
@@ -23,6 +28,21 @@ import 'package:maplibre_expressions/src/expressions/zoom/zoom.dart';
 abstract class MaplibreExp {
   /// {@macro maplibre_expressions}
   const MaplibreExp();
+
+  /*
+  * Types expressions.
+  *
+  * https://maplibre.org/maplibre-style-spec/expressions/#types
+  */
+  const factory MaplibreExp.image(MaplibreExp imageName) = ImageExp;
+
+  const factory MaplibreExp.toString(MaplibreExp value) = ToStringExp;
+
+  const factory MaplibreExp.toNumber(List<MaplibreExp> values) = ToNumberExp;
+
+  const factory MaplibreExp.toBool(MaplibreExp value) = ToBooleanExp;
+
+  const factory MaplibreExp.toColor(List<MaplibreExp> values) = ToColorExp;
 
   /*
   * Lookup's expressions.
@@ -130,4 +150,8 @@ abstract class MaplibreExp {
   /// Composes primitive expression.
   /// Its output can be provided to layer directly.
   dynamic compose();
+}
+
+extension MaplibreExpExtension on List<MaplibreExp> {
+  List<dynamic> compose() => map((e) => e.compose()).toList();
 }
