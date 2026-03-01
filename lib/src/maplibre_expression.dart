@@ -1,9 +1,13 @@
-import 'package:maplibre_expressions/src/expressions/case.dart';
-import 'package:maplibre_expressions/src/expressions/coalesce.dart';
-import 'package:maplibre_expressions/src/expressions/comparisons.dart';
 import 'package:maplibre_expressions/src/expressions/const.dart';
-import 'package:maplibre_expressions/src/expressions/get.dart';
-import 'package:maplibre_expressions/src/expressions/match.dart';
+import 'package:maplibre_expressions/src/expressions/decision/all.dart';
+import 'package:maplibre_expressions/src/expressions/decision/any.dart';
+import 'package:maplibre_expressions/src/expressions/decision/case.dart';
+import 'package:maplibre_expressions/src/expressions/decision/coalesce.dart';
+import 'package:maplibre_expressions/src/expressions/decision/comparisons.dart';
+import 'package:maplibre_expressions/src/expressions/decision/match.dart';
+import 'package:maplibre_expressions/src/expressions/decision/not.dart';
+import 'package:maplibre_expressions/src/expressions/decision/within.dart';
+import 'package:maplibre_expressions/src/expressions/lookup/get.dart';
 
 /// {@template maplibre_expressions}
 /// A Very Good Project created by Very Good CLI.
@@ -55,6 +59,14 @@ abstract class MaplibreExp {
 
   const factory MaplibreExp.lse(MaplibreExp input1, MaplibreExp input2) =
       LessOrEqualExp;
+
+  const factory MaplibreExp.all(List<MaplibreExp> inputs) = AllExp;
+
+  const factory MaplibreExp.any(List<MaplibreExp> inputs) = AnyExp;
+
+  const factory MaplibreExp.not(MaplibreExp input) = NotExp;
+
+  const factory MaplibreExp.within(Map<String, dynamic> geojson) = WithinExp;
 
   /*
   * Package specific expressions.
