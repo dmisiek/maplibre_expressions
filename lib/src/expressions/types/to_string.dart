@@ -22,7 +22,7 @@ class ToStringExp extends MaplibreExp {
   final MaplibreExp value;
 
   @override
-  dynamic compose() {
+  List<dynamic> compose() {
     return ['to-string', value.compose()];
   }
 }

@@ -14,7 +14,7 @@ class ToColorExp extends MaplibreExp {
   final List<MaplibreExp> values;
 
   @override
-  dynamic compose() {
-    return ['to-number', ...values.compose()];
+  List<dynamic> compose() {
+    return ['to-color', ...values.compose()];
   }
 }

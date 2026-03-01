@@ -18,7 +18,7 @@ class ImageExp extends MaplibreExp {
   final MaplibreExp imageName;
 
   @override
-  dynamic compose() {
+  List<dynamic> compose() {
     return ['image', imageName.compose()];
   }
 }

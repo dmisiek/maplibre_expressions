@@ -12,7 +12,7 @@ class CoalesceExp extends MaplibreExp {
   final List<MaplibreExp> expressions;
 
   @override
-  dynamic compose() {
+  List<dynamic> compose() {
     return [
       'coalesce',
       ...expressions.compose(),

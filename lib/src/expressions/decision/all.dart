@@ -15,7 +15,7 @@ class AllExp extends MaplibreExp {
   final List<MaplibreExp> expressions;
 
   @override
-  dynamic compose() {
+  List<dynamic> compose() {
     return [
       'all',
       ...expressions.compose(),

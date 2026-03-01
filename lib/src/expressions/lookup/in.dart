@@ -14,7 +14,7 @@ class InExp extends MaplibreExp {
   final MaplibreExp array;
 
   @override
-  dynamic compose() {
+  List<dynamic> compose() {
     return ['in', item.compose(), array.compose()];
   }
 }
@@ -33,7 +33,7 @@ class InStringExp extends MaplibreExp {
   final MaplibreExp string;
 
   @override
-  dynamic compose() {
+  List<dynamic> compose() {
     return ['in', substring.compose(), string.compose()];
   }
 }

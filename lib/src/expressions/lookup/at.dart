@@ -14,7 +14,7 @@ class AtExp extends MaplibreExp {
   final MaplibreExp array;
 
   @override
-  dynamic compose() {
+  List<dynamic> compose() {
     return ['at', index.compose(), array.compose()];
   }
 }

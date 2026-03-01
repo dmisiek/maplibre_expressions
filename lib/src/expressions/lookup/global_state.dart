@@ -15,7 +15,7 @@ class GlobalStateExp extends MaplibreExp {
   final String propertyName;
 
   @override
-  dynamic compose() {
+  List<dynamic> compose() {
     return ['global-state', propertyName];
   }
 }

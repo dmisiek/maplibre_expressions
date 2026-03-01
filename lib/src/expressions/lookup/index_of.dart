@@ -21,7 +21,7 @@ class IndexOfExp extends MaplibreExp {
   final MaplibreExp? fromIndex;
 
   @override
-  dynamic compose() {
+  List<dynamic> compose() {
     return [
       'index-of',
       item.compose(),
@@ -52,7 +52,7 @@ class IndexOfStringExp extends MaplibreExp {
   final MaplibreExp? fromIndex;
 
   @override
-  dynamic compose() {
+  List<dynamic> compose() {
     return [
       'index-of',
       substring.compose(),

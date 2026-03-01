@@ -17,7 +17,7 @@ class ComparisonExp extends MaplibreExp {
   final String sign;
 
   @override
-  dynamic compose() {
+  List<dynamic> compose() {
     return [
       sign,
       input1.compose(),

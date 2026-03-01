@@ -14,7 +14,7 @@ class ToBooleanExp extends MaplibreExp {
   final MaplibreExp value;
 
   @override
-  dynamic compose() {
+  List<dynamic> compose() {
     return ['to-boolean', value.compose()];
   }
 }

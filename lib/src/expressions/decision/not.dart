@@ -11,7 +11,7 @@ class NotExp extends MaplibreExp {
   final MaplibreExp input;
 
   @override
-  dynamic compose() {
+  List<dynamic> compose() {
     return ['!', input];
   }
 }

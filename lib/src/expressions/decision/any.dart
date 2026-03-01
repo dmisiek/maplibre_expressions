@@ -15,7 +15,7 @@ class AnyExp extends MaplibreExp {
   final List<MaplibreExp> inputs;
 
   @override
-  dynamic compose() {
+  List<dynamic> compose() {
     return [
       'any',
       ...inputs.compose(),

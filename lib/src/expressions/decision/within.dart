@@ -20,7 +20,7 @@ class WithinExp extends MaplibreExp {
   final Map<String, dynamic> geojson;
 
   @override
-  dynamic compose() {
+  List<dynamic> compose() {
     return ['within', geojson];
   }
 }

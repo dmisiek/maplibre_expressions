@@ -18,7 +18,7 @@ class CaseExp extends MaplibreExp {
   final MaplibreExp fallback;
 
   @override
-  dynamic compose() {
+  List<dynamic> compose() {
     return [
       'case',
       ...cases.expand((e) => e.compose()),

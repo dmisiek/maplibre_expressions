@@ -31,7 +31,7 @@ class MatchExp extends MaplibreExp {
   final MaplibreExp fallback;
 
   @override
-  dynamic compose() {
+  List<dynamic> compose() {
     return [
       'match',
       input.compose(),

@@ -20,7 +20,7 @@ class SliceExp extends MaplibreExp {
   final MaplibreExp? endIndex;
 
   @override
-  dynamic compose() {
+  List<dynamic> compose() {
     return [
       'slice',
       array.compose(),

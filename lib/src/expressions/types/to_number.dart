@@ -20,7 +20,7 @@ class ToNumberExp extends MaplibreExp {
   final List<MaplibreExp> values;
 
   @override
-  dynamic compose() {
+  List<dynamic> compose() {
     return ['to-number', ...values.compose()];
   }
 }
