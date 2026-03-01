@@ -17,6 +17,6 @@ class LengthExp extends MaplibreExp {
 
   @override
   List<dynamic> compose() {
-    return ['length', arrayOrString];
+    return ['length', arrayOrString.compose()];
   }
 }
