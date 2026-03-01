@@ -8,6 +8,9 @@ import 'package:maplibre_expressions/src/expressions/decision/match.dart';
 import 'package:maplibre_expressions/src/expressions/decision/not.dart';
 import 'package:maplibre_expressions/src/expressions/decision/within.dart';
 import 'package:maplibre_expressions/src/expressions/lookup/get.dart';
+import 'package:maplibre_expressions/src/expressions/lookup/global_state.dart';
+import 'package:maplibre_expressions/src/expressions/lookup/has.dart';
+import 'package:maplibre_expressions/src/expressions/lookup/length.dart';
 
 /// {@template maplibre_expressions}
 /// A Very Good Project created by Very Good CLI.
@@ -21,7 +24,13 @@ abstract class MaplibreExp {
   *
   * https://maplibre.org/maplibre-style-spec/expressions/#lookup
   */
+  const factory MaplibreExp.globalState(String propertyName) = GlobalStateExp;
+
   const factory MaplibreExp.get(String key) = GetExp;
+
+  const factory MaplibreExp.has(String key) = HasExp;
+
+  const factory MaplibreExp.length(MaplibreExp arrayOrString) = LengthExp;
 
   /*
   * Decision's expressions.
