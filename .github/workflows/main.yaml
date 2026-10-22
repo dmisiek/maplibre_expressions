@@ -28,5 +28,5 @@ jobs:
       dart_sdk: "3.10.0"
 
   pana:
-    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/pana.yml@v1
+    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/pana.yml@v2
 
